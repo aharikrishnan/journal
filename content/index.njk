@@ -4,7 +4,6 @@ numberOfLatestPostsToShow: 10
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-{% image "./possum.png", "A possum parent and two possum kids hanging from the iconic red balloon" %}
 <h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
