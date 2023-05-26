@@ -1,0 +1,8 @@
+#! /bin/bash
+
+docker run \
+	-v "/home/ubuntu/journal:/app" \
+	-p '8081:8081' \
+	-it builder 'npm i && npx @11ty/eleventy --serve --port 8081'
+
+	# -it builder 'npm i && npx @11ty/eleventy --serve --port 8081 --pathprefix="/dev/"'
