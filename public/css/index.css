@@ -123,6 +123,7 @@ main :first-child {
 header {
 	border-bottom: 1px dashed var(--color-gray-20);
 }
+
 header:after {
 	content: "";
 	display: table;
